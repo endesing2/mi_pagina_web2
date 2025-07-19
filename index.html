@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Fuentes - Demostración</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&family=Crimson+Text:wght@400;600&family=UnifrakturMaguntia&family=Cinzel:wght@400;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 50%, #4C1D95 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .font-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .font-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .font-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #5a5a5a;
+            margin-bottom: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .font-sample {
+            margin-bottom: 1rem;
+        }
+
+        .sample-large {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .sample-medium {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #34495e;
+        }
+
+        .sample-small {
+            font-size: 1rem;
+            color: #7f8c8d;
+        }
+
+        /* Fuentes Góticas */
+        .gothic {
+            font-family: 'UnifrakturMaguntia', cursive;
+        }
+
+        .gothic-modern {
+            font-family: 'Cinzel', serif;
+        }
+
+        /* Fuentes Serif */
+        .serif-elegant {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .serif-classic {
+            font-family: 'Crimson Text', serif;
+        }
+
+        .serif-times {
+            font-family: 'Times New Roman', serif;
+        }
+
+        /* Montserrat y Sans-serif */
+        .montserrat-light {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+        }
+
+        .montserrat-regular {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+
+        .montserrat-bold {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        /* Fuentes Monospace */
+        .monospace {
+            font-family: 'Fira Code', monospace;
+        }
+
+        .description {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-left: 4px solid #8B5CF6;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 1rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .sample-large {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Demostración de Tipos de Fuentes</h1>
+            <p>Una colección de estilos tipográficos: Góticas, Serif, Montserrat y más</p>
+        </div>
+
+        <div class="grid">
+            <!-- Fuentes Góticas -->
+            <div class="font-card">
+                <div class="font-title">🏰 Fuentes Góticas</div>
+                <div class="font-sample">
+                    <div class="sample-large gothic">Elegancia Medieval</div>
+                    <div class="sample-medium gothic">Texto ornamental</div>
+                    <div class="sample-small gothic">Abcdefghijklmnopqrstuvwxyz 1234567890</div>
+                </div>
+                <div class="description">
+                    <strong>UnifrakturMaguntia:</strong> Fuente gótica tradicional, perfecta para títulos ceremoniales, invitaciones elegantes o diseños con temática medieval.
+                </div>
+            </div>
+
+            <div class="font-card">
+                <div class="font-title">🏛️ Gótica Moderna</div>
+                <div class="font-sample">
+                    <div class="sample-large gothic-modern">Sofisticación Clásica</div>
+                    <div class="sample-medium gothic-modern">Estilo contemporáneo</div>
+                    <div class="sample-small gothic-modern">Abcdefghijklmnopqrstuvwxyz 1234567890</div>
+                </div>
+                <div class="description">
+                    <strong>Cinzel:</strong> Inspirada en inscripciones romanas clásicas, combina elegancia histórica con legibilidad moderna.
+                </div>
+            </div>
+
+            <!-- Fuentes Serif -->
+            <div class="font-card">
+                <div class="font-title">📖 Serif Elegante</div>
+                <div class="font-sample">
+                    <div class="sample-large serif-elegant">Refinamiento Editorial</div>
+                    <div class="sample-medium serif-elegant">Perfecta para títulos</div>
+                    <div class="sample-small serif-elegant">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elegante y legible para textos largos.</div>
+                </div>
+                <div class="description">
+                    <strong>Playfair Display:</strong> Serif de alto contraste, ideal para títulos y encabezados que requieren distinción y elegancia.
+                </div>
+            </div>
+
+            <div class="font-card">
+                <div class="font-title">📚 Serif Clásica</div>
+                <div class="font-sample">
+                    <div class="sample-large serif-classic">Tradición Literaria</div>
+                    <div class="sample-medium serif-classic">Lectura cómoda</div>
+                    <div class="sample-small serif-classic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excelente para textos extensos y académicos.</div>
+                </div>
+                <div class="description">
+                    <strong>Crimson Text:</strong> Diseñada específicamente para textos largos, ofrece excelente legibilidad y comodidad de lectura.
+                </div>
+            </div>
+
+            <!-- Montserrat -->
+            <div class="font-card">
+                <div class="font-title">✨ Montserrat Ligera</div>
+                <div class="font-sample">
+                    <div class="sample-large montserrat-light">Modernidad Minimalista</div>
+                    <div class="sample-medium montserrat-light">Diseño contemporáneo</div>
+                    <div class="sample-small montserrat-light">Abcdefghijklmnopqrstuvwxyz 1234567890 - Perfecta para diseños modernos y limpios.</div>
+                </div>
+                <div class="description">
+                    <strong>Montserrat Light:</strong> Versión ligera que aporta elegancia y modernidad, ideal para textos que requieren sofisticación visual.
+                </div>
+            </div>
+
+            <div class="font-card">
+                <div class="font-title">🎯 Montserrat Regular</div>
+                <div class="font-sample">
+                    <div class="sample-large montserrat-regular">Versatilidad Urbana</div>
+                    <div class="sample-medium montserrat-regular">Claridad y funcionalidad</div>
+                    <div class="sample-small montserrat-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excelente para interfaces digitales y contenido web.</div>
+                </div>
+                <div class="description">
+                    <strong>Montserrat Regular:</strong> Inspirada en los carteles del barrio Montserrat de Buenos Aires, combina carácter urbano con excelente legibilidad.
+                </div>
+            </div>
+
+            <div class="font-card">
+                <div class="font-title">💪 Montserrat Bold</div>
+                <div class="font-sample">
+                    <div class="sample-large montserrat-bold">Impacto Visual</div>
+                    <div class="sample-medium montserrat-bold">Presencia dominante</div>
+                    <div class="sample-small montserrat-bold">ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 - Ideal para títulos y llamadas a la acción.</div>
+                </div>
+                <div class="description">
+                    <strong>Montserrat Bold:</strong> Versión con peso extra para crear jerarquía visual y destacar elementos importantes del diseño.
+                </div>
+            </div>
+
+            <div class="font-card">
+                <div class="font-title">💻 Fuente Monoespaciada</div>
+                <div class="font-sample">
+                    <div class="sample-large monospace">Código Limpio</div>
+                    <div class="sample-medium monospace">function ejemplo() {</div>
+                    <div class="sample-small monospace">const mensaje = "Perfecta para programación";<br>console.log(mensaje);<br>return true;</div>
+                </div>
+                <div class="description">
+                    <strong>Fira Code:</strong> Fuente monoespaciada diseñada para programadores, con ligaduras que mejoran la legibilidad del código.
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer con enlace de Instagram -->
+        <footer style="text-align: center; margin-top: 3rem; padding: 2rem;">
+            <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 15px; padding: 1.5rem; border: 1px solid rgba(255, 255, 255, 0.2);">
+                <p style="color: white; margin-bottom: 1rem; font-size: 1.1rem; font-weight: 500;">¿Te gustó esta demostración tipográfica?</p>
+                <a href="https://www.instagram.com/endesing2?igsh=MWpmZmZsZHNjcWpnaA==" 
+                   target="_blank" 
+                   style="display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(45deg, #E1306C, #F56040, #FCAF45); color: white; text-decoration: none; padding: 12px 24px; border-radius: 25px; font-weight: 600; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 15px rgba(225, 48, 108, 0.3);"
+                   onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 20px rgba(225, 48, 108, 0.4)'"
+                   onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 15px rgba(225, 48, 108, 0.3)'">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    @endesing2
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+                  </html>
